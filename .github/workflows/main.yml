@@ -23,7 +23,7 @@ jobs:
       run: |
         ssh -o StrictHostKeyChecking=no ${{ secrets.VM_USER }}@${{ secrets.VM_HOST }} << 'EOF'
           set -e
-          cd ~  # change to your actual project directory if needed
+          cd /home/ubuntu/Simple-Flask-App-Docker # change to your actual project directory if needed
 
           echo "Pulling latest code..."
           git pull origin main
